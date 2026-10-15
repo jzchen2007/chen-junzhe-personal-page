@@ -5,6 +5,9 @@
 年级 / 专业：大二 / 软件工程  
 考核任务一：个人主页设计与未来规划展示
 
+源码仓库：[jzchen2007/chen-junzhe-personal-page](https://github.com/jzchen2007/chen-junzhe-personal-page)  
+在线网页：[陈俊哲的个人主页](https://jzchen2007.github.io/chen-junzhe-personal-page/)
+
 ## 本地运行
 
 直接用现代浏览器打开 `dist/index.html` 即可，无需安装依赖、编译或后端服务。也可以用 VS Code Live Server 打开 `dist` 文件夹预览。
@@ -18,6 +21,7 @@
 - `dist/assets/LUCIDE-LICENSE`：图标库许可证。
 - `dist/assets/favicon.svg`：自主绘制的文字站点图标。
 - `.openai/hosting.json`：网站托管配置，不影响本地打开。
+- `.github/workflows/pages.yml`：将 `dist` 文件夹自动发布到 GitHub Pages。
 
 ## 技术与主要功能
 
@@ -45,6 +49,6 @@
 
 ## 提交提示
 
-整个项目文件夹均可提交；入口在 `dist/index.html`。按考核要求，还需使用本人的 GitHub 或 Gitee 账号提交源码与线上访问地址。若使用 GitHub Pages，可将 `dist` 中的内容放在 Pages 发布目录。
+整个项目文件夹均可提交；入口在 `dist/index.html`。仓库使用 GitHub Actions 将 `dist` 自动部署到 GitHub Pages，向 `main` 分支推送修改后会自动更新网页。
 
-网站托管默认仅本人可访问；向评审提交前需确认最终地址的访问权限。建议现场讲解导航事件、滚动高亮、时间轴布局、响应式适配及复制反馈的实现。
+作者已选择公开仓库与网页，可向评审提交本 README 顶部的源码仓库与在线网页地址。建议现场讲解导航事件、滚动高亮、时间轴布局、响应式适配及复制反馈的实现。
